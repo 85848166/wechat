@@ -1,0 +1,13 @@
+{
+  "pages":[
+  "pages/index/index",
+  "pages/news/news",
+  "pages/news/news-detail/news-detail"
+],
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#109D59",
+  "navigationBarTitleText": "微信小测试",
+  "navigationBarTextStyle": "white"
+}
+}

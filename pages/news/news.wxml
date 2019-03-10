@@ -1,0 +1,19 @@
+<import src="news-template/news-template.wxml" />
+<view class='newsContainer'>
+  <swiper class='swiperContainer' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item>
+      <image src='../images/banner1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../images/banner2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../images/banner3.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{userData}}" wx:for-item="item" wx:key="unique">
+    <view bindtap='getNewsDetail' data-newsid="{{item.newsId}}">
+      <template is="newsTemplate" data="{{...item}}" />
+    </view>
+  </block>
+</view>

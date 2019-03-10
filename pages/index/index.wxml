@@ -1,0 +1,9 @@
+
+<view class='index-container'>
+  <image class='logo' src='../images/logo.png'></image>
+  <text class="user-name" style="color:#109D59">Hello,<text style="color:#109D59">iwen</text>
+  </text>
+  <view class='moto-container' bindtap="goNews">
+      <text class="moto">和音乐一起分享时光</text>
+  </view>
+</view>
